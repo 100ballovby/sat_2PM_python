@@ -1,5 +1,14 @@
-weekdays = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+d = {0: 'Понедельник', 1: 'Вторник', 2: 'Среда', 3: 'Четверг', 4: 'Пятница', 5: 'Суббота', 6: 'Воскресенье'}
 
-weekdays_dict = dict(zip(range(7), weekdays))
-with open('smth.py', 'w') as f:
-    f.write(str(weekdays_dict))
+print(len(d))  # количество пар ключ-значение в словаре
+
+for key in d.keys():  # метод можно не писать, в этом цикле перебираются словари
+    print(key)
+
+
+for value in d.values():  # метод можно не писать, в этом цикле перебираются словари
+    print(value)
+
+
+for key, value in d.items():
+    print(f'Key: , Value: {value}')
